@@ -31,7 +31,7 @@ namespace BlogApi.Controllers
             {
                 var user = context.data.SingleOrDefault(x => x.Id == id);
 
-                if (user == null)
+                if (user != null)
                 {
                     return Ok(user);
                 }
